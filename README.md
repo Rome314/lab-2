@@ -10,7 +10,7 @@
 ### Run with docker-compose:
 
 
-    docker-compose up -d1. docker-compose up -d
+    docker-compose up -d
 
 ### Run without docker-compose:
 
