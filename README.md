@@ -10,8 +10,8 @@
 ### Run with docker-compose:
 
 
-    docker-compose up -d
-    
+    docker-compose up -d1. docker-compose up -d
+
 ### Run without docker-compose:
 
 
@@ -27,4 +27,5 @@
 
     ssh -L YOUR_PORT:hackmd:3000 root@REMOTE_MACHINE_ADDRESS -p 23
 
-### To access app: http://localhost:YOUR_PORT
+### To access app: 
+>http://localhost:YOUR_PORT
