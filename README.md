@@ -8,13 +8,24 @@
 2. Add your local machine's public key to sshd-configuration/authorized_keys file
 
 ### Run with docker-compose:
-1. docker-compose up -d
+
+
+    docker-compose up -d1. docker-compose up -d
 
 ### Run without docker-compose:
-1. ./run-without-docker-compose.sh
 
+
+     ./run-without-docker-compose.sh
+    
 ### Stopping:
-1. ./stop-it.sh
+
+
+     ./stop-it.sh
+
+### Tunneling to local machine:
+
+
+    ssh -L YOUR_PORT:hackmd:3000 root@REMOTE_MACHINE_ADDRESS -p 23
 
 
 
