@@ -27,5 +27,4 @@
 
     ssh -L YOUR_PORT:hackmd:3000 root@REMOTE_MACHINE_ADDRESS -p 23
 
-
-
+### To access app: http://localhost:YOUR_PORT
