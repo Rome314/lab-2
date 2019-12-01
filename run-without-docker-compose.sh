@@ -9,7 +9,7 @@ docker network connect external_nw sshd;
 docker run -dit --name db -e POSTGRES_USER=hackmd -e POSTGRES_PASSWORD=hackmdpass -e PSTGRESDB=hackmd -v database:/var/lib/postgresql/data postgres:11.5-alpine;
 docker network connect internal_nw db;
 docker network disconnect bridge db;
-docker run -dit --name hackmd -e  HMD_DB_URL=postgres://hackmd:hackmdpass@db:5432/hackmd -p  hackmdio/hackmd:1.3.1-alpine;
+docker run -dit --name hackmd -e  HMD_DB_URL=postgres://hackmd:hackmdpass@db:5432/hackmd hackmdio/hackmd:1.3.1-alpine;
 docker network connect internal_nw hackmd;
 docker network disconnect bridge hackmd;
 
