@@ -1,5 +1,6 @@
+PermitRootLogin without-password
 PubkeyAuthentication yes
 AuthorizedKeysFile /root/.ssh/authorized_keys
-PasswordAuthentication yes
+PasswordAuthentication no
 
 
